@@ -1,0 +1,100 @@
+:root {
+  --bg-color: #181c1f;
+  --tab-bg-color: #282f33;
+  --text-color: #bdd1d4;
+  --yellow: #f3e248;
+  --yellow-light: #dbd7b1;
+  --grey: #e0eff1;
+  --btn-text-color: #273133;
+  --tab-cont-bg-color: #2d3942;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+header img {
+  inline-size: 3rem;
+  object-fit: contain;
+}
+
+header h1 {
+  color: var(--yellow);
+  margin: 0;
+}
+
+header p {
+  color: var(--yellow-light);
+  margin: 0;
+}
+
+#tabs {
+  max-inline-size: 32rem;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+#tabs menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 0.25rem;
+}
+
+#tabs button {
+  background-color: var(--tab-bg-color);
+  border: none;
+  border-bottom-color: var(--yellow);
+  border-radius: 0.25rem 0.25rem 0 0;
+  color: var(--grey);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease-out;
+}
+
+#tabs button:hover,
+#tabs button.active {
+  background-color: var(--yellow);
+  color: var(--btn-text-color);
+}
+
+#tab-content {
+  background-color: var(--tab-cont-bg-color);
+  border-radius: 0 0.25rem 0.25rem 0.25rem;
+  padding: 1rem;
+}
+
+#tab-content li {
+  margin: 0.75rem 0;
+}
+
+ul {
+  padding: 0 0 0 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    max-inline-size: 30rem;
+    margin: 0 auto;
+  }
+}
