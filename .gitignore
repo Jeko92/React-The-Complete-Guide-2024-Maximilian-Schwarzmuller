@@ -1,3 +1,6 @@
 node_modules
 react-complete-guide-course-resources-main
 *.vscode
+**/.DS_Store
+.DS_Store
+/.DS_Store
