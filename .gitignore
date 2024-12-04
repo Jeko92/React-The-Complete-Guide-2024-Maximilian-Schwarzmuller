@@ -1,2 +1,9 @@
 node_modules
 react-complete-guide-course-resources-main
+
+*.idea
+*.vscode
+
+/.idea
+/.vscode
+/.vscode/
